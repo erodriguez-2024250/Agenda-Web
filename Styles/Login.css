@@ -1,0 +1,74 @@
+body{
+    background-image: url("loginfondo.jpg");
+    height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-size: cover;
+    background-position: center;
+}
+
+.iniciar{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    border-radius: 15px;
+    background: rgba(155, 148, 148, 0.233); /* transparencia */
+}
+
+.iniciar h1{
+    text-align: center;
+    color: #e7e1e1;
+    font-size: 40px;
+}
+
+.iniciar form{
+    padding: 0 40px;
+}
+
+form .mail{
+    border-bottom: 2px solid #aaa;
+}
+
+.mail:focus-within{
+    border-bottom: 2px solid #b33636;
+    transition: 0.5s ease;
+}
+
+input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 8px 0;
+    font-size: 20px;
+    color: #e7e1e1;
+}
+
+a{
+    text-decoration: none;
+    font-size: 22px;
+    color: #3c62b3;
+    text-align: left;
+}
+
+.mail label{
+    font-size: 24px;
+    padding: 10px 0;
+    color: #8f8f8f;
+}
+
+button{
+    margin: 15px 0;
+    font-size: 25px;
+    width: 100%;
+    border-radius: 20px;
+    background: #fff;
+    border: none;
+}
+
+button:hover{
+    background-color: #3d649eaf;
+    color: #fff;
+    transition: 0.5s ease;
+}
