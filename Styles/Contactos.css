@@ -11,12 +11,15 @@ body{
 .navbar{
     background-color: #1b3052;
     display: flex;
+    flex-wrap: wrap;
     color: #fff;
     font-size: 30px;
-    padding: 25px;
+    padding: 20px;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    position: sticky;
+    top: 0;
 }
 
 a{
@@ -72,4 +75,30 @@ b{
 b:hover{
     color: #3b3b3b;
     transition: 0.9s ease;
+}
+
+.btn-agregar{
+    position: fixed;
+    bottom: 40px;
+    right: 50px;
+    padding: 20px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    color: #000;
+    background-color: #1a2f50;
+}
+
+.btn-agregar i{
+    font-size: 45px;
+    
+}
+
+.btn-agregar:hover{
+    background-color: #3e69af;
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+a{
+
 }
