@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="Styles/ToDo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+            <a href="contactos.html"><i class="fa-solid fa-house"></i>Inicio</a>
+            <a href="ToDoList.html"><i class="fa-solid fa-list-check"></i>Pendientes</a>
+            <a href="Favoritos.html"><i class="fa-regular fa-star"></i></i>Favoritos</a>
+    </nav>
+
+<div class="todo-container">
+    <h1>Lista de Pendientes</h1>
+
+    <form id="taskForm">
+        <input type="text" id="taskInput" placeholder="Nueva tarea..." required>
+        <select id="priorityInput">
+            <option value="1">Alta</option>
+            <option value="2">Media</option>
+            <option value="3">Baja</option>
+        </select>
+        <button type="submit">Agregar</button>
+    </form>
+    <button id="sortBtn">Ordenar por prioridad</button>
+    <ul id="taskList"></ul>
+</div>
+
+<script src="JS/ToDo.js"></script>
+</body>
+</html>
