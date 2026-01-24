@@ -1,74 +1,138 @@
-body{
-    background-image: url("loginfondo.jpg");
-    height: 100vh;
+*{
+    margin: 0;
+    box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-size: cover;
-    background-position: center;
 }
 
-.iniciar{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 400px;
-    border-radius: 15px;
-    background: rgba(155, 148, 148, 0.233); /* transparencia */
+body{
+    background-color: #cadcdd;
 }
 
-.iniciar h1{
-    text-align: center;
-    color: #e7e1e1;
-    font-size: 40px;
-}
-
-.iniciar form{
-    padding: 0 40px;
-}
-
-form .mail{
-    border-bottom: 2px solid #aaa;
-}
-
-.mail:focus-within{
-    border-bottom: 2px solid #b33636;
-    transition: 0.5s ease;
-}
-
-input{
-    background-color: transparent;
-    border: none;
-    outline: none;
-    width: 100%;
-    padding: 8px 0;
-    font-size: 20px;
-    color: #e7e1e1;
+.navbar{
+    background-color: #1b3052;
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+    font-size: 30px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: sticky;
+    top: 0;
 }
 
 a{
     text-decoration: none;
-    font-size: 22px;
-    color: #3c62b3;
-    text-align: left;
-}
-
-.mail label{
-    font-size: 24px;
-    padding: 10px 0;
-    color: #8f8f8f;
-}
-
-button{
-    margin: 15px 0;
-    font-size: 25px;
-    width: 100%;
-    border-radius: 20px;
-    background: #fff;
-    border: none;
-}
-
-button:hover{
-    background-color: #3d649eaf;
     color: #fff;
+}
+
+.all-contacts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.contact-item{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 20px 0;
+    margin-bottom: 15px;
+    border-radius: 16px;
+    color: #1a2f50;
+    justify-content: center;
+}
+
+.fa-regular{
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.fa-solid{
+    font-size: 20px;
+}
+
+h1{
+    font-size: 30px;
+    color: #1a2f50;
+    border-bottom: 2px solid #1a2f50;
+    margin: 18px 0 15px 0;
+    text-align: center;
+}
+
+b{
+    font-size: 22px;
+    color: transparent;
+}
+
+b:hover{
+    color: #3b3b3b;
+    transition: 0.9s ease;
+}
+
+.btn-agregar{
+    position: fixed;
+    bottom: 40px;
+    right: 50px;
+    padding: 20px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    color: #000;
+    background-color: #1a2f50;
+}
+
+.btn-agregar i{
+    font-size: 45px;
+    
+}
+
+.btn-agregar:hover{
+    background-color: #3e69af;
     transition: 0.5s ease;
 }
+
+.btn-details{
+    margin-left: 10px;
+    background-color: none;
+    border: none;
+    transition: transform 0.3s;
+}
+
+.btn-details:hover{
+    transform: scale(1.2);
+}
+
+.contact-details {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.details-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 30px;
+    width: 350px;
+    text-align: center;
+    color: #1a2f50;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.contact-details p{
+    font-size: 22px;
+}
+
