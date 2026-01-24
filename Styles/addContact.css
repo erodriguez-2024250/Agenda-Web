@@ -4,10 +4,6 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-body{
-    background-color: #cadcdd;
-}
-
 .navbar{
     background-color: #1b3052;
     display: flex;
@@ -20,6 +16,7 @@ body{
     gap: 20px;
     position: sticky;
     top: 0;
+    
 }
 
 a{
@@ -31,21 +28,20 @@ a{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-45%);
+    transform: translate(-50%,-50%);
     border: 1px solid #000;
     padding: 50px 50px;
     border-radius: 35px;
-    background-color: #ebebeb;
-}
-
-.formulario h1{
-    font-size: 40px;
-    margin-bottom: 25px;
 }
 
 .items{
     display: flex;
     flex-direction: column;
+}
+
+.formulario h1{
+    font-size: 40px;
+    margin-bottom: 25px;
 }
 
 .items label{
@@ -59,12 +55,28 @@ a{
     border: none;
     outline: none;
     border-bottom: 2px solid #c9c9c9;
-    background-color: #ebebeb;
 }
 
 .items input:focus-within{
     border-bottom: 2.7px solid #000;
-    transition: 0.6s ease;
+    transition: 0.55s ease;
+}
+
+.oh, .ah{
+    display: flex;
+    flex-direction: column;
+}
+
+.oh:focus-within label{
+    color: #000;
+}
+
+.ah:focus-within label{
+    color: #000;
+}
+
+.items:focus-within .nom{
+    color: #000
 }
 
 button{
@@ -81,23 +93,7 @@ button:hover{
 }
 
 i{
-    font-size: 40px;
+    font-size: 30px;
     margin-left: 10px;
 }
-
-.a, .e, .i, .o{
-    display: flex;
-    flex-direction: column;
-}
-
-.a, .e, .i, .o label{
-    margin-top: 10px;
-}
-
-.a:focus-within label, .e:focus-within label,
-.i:focus-within label, .o:focus-within label{
-    color: #1b3052;
-    transition: 0.6s ease;
-}
-
 
