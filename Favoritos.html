@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favoritos</title>
+    <link rel="stylesheet" href="Styles/Favoritos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+            <a href="contactos.html"><i class="fa-solid fa-house"></i>Inicio</a>
+            <a href="ToDoList.html"><i class="fa-solid fa-list-check"></i>Pendientes</a>
+            <a href="#" id="btnPerfil"><i class="fa-solid fa-user"></i>Perfil</a>
+            <a href="Favoritos.html "><i class="fa-solid fa-star"></i>Favoritos</a>
+    </nav>
+    <div class="all-contacts">
+        <div class="contacts-A">
+            <h1>-A-</h1>
+            <div class="contact-item">
+                <i class="fa-solid fa-star"></i>
+                <h2>Andrés Iniesta</h2>
+                <button class="btn-details" data-group="A" data-name="Andrés Iniesta"
+                    data-phone="+502 45125156" data-email="ainiesta@gmail.com">
+                    <i class="fa-solid fa-clipboard"></i>
+                </button> 
+                <b>+502 45125156</b>
+            </div>
+            <div class="contact-item">
+                <i class="fa-solid fa-star"></i>
+                <h2>Alan Shearer</h2>
+                <button class="btn-details" data-group="A" data-name="Alan Shearer"
+                    data-phone="+502 29845618" data-email="ashearer@gmail.com">
+                    <i class="fa-solid fa-clipboard"></i>
+                </button>
+                <b>+502 29845618</b>
+            </div>
+        </div>
+        <div class="contacts-C">
+            <h1>-C-</h1>
+            <div class="contact-item">
+                <i class="fa-solid fa-star"></i>
+                <h2>Claudio Pizarro</h2>
+                <button class="btn-details" data-group="C" data-name="Claudio Pizarro"
+                    data-phone="+502 31579462" data-email="cpizarro@gmail.com">
+                    <i class="fa-solid fa-clipboard"></i>
+                </button>
+                <b>+502 31579462</b>
+            </div>
+        </div>
+        <div class="contacts-E">
+            <h1>-E-</h1>
+            <div class="contact-item">
+                <i class="fa-solid fa-star"></i>
+                <h2>Elias Figueroa</h2>
+                <button class="btn-details" data-group="E" data-name="Elias Figueroa"
+                    data-phone="+502 36975412" data-email="efigueroa@gmail.com">
+                    <i class="fa-solid fa-clipboard"></i>
+                </button> 
+                <b>+502 36975412</b>
+            </div>
+            <div class="contact-item">
+                <i class="fa-solid fa-star"></i>
+                <h2>Eden Hazard</h2>
+                <button class="btn-details" data-group="E" data-name="Eden Hazard"
+                    data-phone="+502 36975412" data-email="ehazard@gmail.com">
+                    <i class="fa-solid fa-clipboard"></i>
+                </button> 
+                <b>+502 36975412</b>
+            </div>
+        </div>
+        <div class="contacts-J">
+            <h1>-J-</h1>
+            <div class="contact-item">
+                <i class="fa-solid fa-star"></i>
+                <h2>Jairzinho</h2>
+                <button class="btn-details" data-group="J" data-name="Jairzinho"
+                    data-phone="+502 21548674" data-email="jairzinho@gmail.com">
+                    <i class="fa-solid fa-clipboard"></i>
+                </button> 
+                <b>+502 21548674</b>
+            </div>
+        </div>
+        <div class="contacts-N">
+            <h1>-N-</h1>
+            <div class="contact-item">
+                <i class="fa-solid fa-star"></i>
+                <h2>Neymar Junior</h2>
+                <button class="btn-details" data-group="N" data-name="Neymar Junior"
+                    data-phone="+502 21548674" data-email="njunior@gmail.com">
+                    <i class="fa-solid fa-clipboard"></i>
+                </button>  
+                <b>+502 54879562</b>
+            </div>
+        </div>
+        <div class="contacts-T">
+            <h1>-T-</h1>
+            <div class="contact-item">
+                <i class="fa-solid fa-star"></i>
+                <h2>Titi Henry</h2>
+                <button class="btn-details" data-group="T" data-name="Titi Henry"
+                    data-phone="+502 24598745" data-email="thenry@gmail.com">
+                    <i class="fa-solid fa-clipboard"></i>
+                </button> 
+                <b>+502 24598745</b>
+            </div>
+        </div>
+        <div class="contacts-V">
+            <h1>-V-</h1>
+            <div class="contact-item">
+                <i class="fa-solid fa-star"></i>
+                <h2>Van Basten</h2>
+                <button class="btn-details" data-group="V" data-name="Van Basten"
+                    data-phone="+502 84561548" data-email="vbasten@gmail.com">
+                    <i class="fa-solid fa-clipboard"></i>
+                </button> 
+                <b>+502 84561548</b>
+            </div>
+        </div>
+    </div>
+
+    <button class="btn-agregar" href="newContact.html">
+        <a href="newContact.html"><i class="fa-solid fa-user-plus"></i></a>
+    </button>
+    
+    <div class="contact-details" id="contactDetails">
+        <div class="details-card">
+            <span class="close" id="closeDetails">&times;</span>
+            <h1 id="detailName"></h1>
+            <p><strong>Grupo:</strong> <span id="detailGroup"></span></p>
+            <p><strong>Teléfono:</strong> <span id="detailPhone"></span></p>
+            <p><strong>Email:</strong> <span id="detailEmail"></span></p>
+        </div>
+    </div>
+
+    <div class="contact-details" id="perfilModal">
+        <div class="details-card">
+            <span class="close" id="closePerfil">&times;</span>
+            <h2>Mi Perfil</h2>
+            <p><strong>Correo:</strong> <span id="perfilCorreo"></span></p>
+        </div>
+    </div>
+    
+    <script src="JS/detalles.js"></script>
+    
+</body>
+</html>
