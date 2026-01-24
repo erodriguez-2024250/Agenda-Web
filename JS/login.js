@@ -5,5 +5,5 @@ document.getElementById("loginForm").addEventListener("submit", e => {
 
     localStorage.setItem("correoUsuario", correo);
 
-    window.location.href = "contactos.html";
+    window.location.href = "Contactos.html";
 });
