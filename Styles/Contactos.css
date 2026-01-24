@@ -55,12 +55,8 @@ a{
     font-size: 20px;
 }
 
-button{
-    margin-left: 2%;
-}
-
 h1{
-    font-size: 25px;
+    font-size: 30px;
     color: #1a2f50;
     border-bottom: 2px solid #1a2f50;
     margin: 18px 0 15px 0;
@@ -95,6 +91,48 @@ b:hover{
 
 .btn-agregar:hover{
     background-color: #3e69af;
-    color: #fff;
     transition: 0.5s ease;
 }
+
+.btn-details{
+    margin-left: 10px;
+    background-color: none;
+    border: none;
+    transition: transform 0.3s;
+}
+
+.btn-details:hover{
+    transform: scale(1.2);
+}
+
+.contact-details {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.details-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 30px;
+    width: 350px;
+    text-align: center;
+    color: #1a2f50;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.contact-details p{
+    font-size: 22px;
+}
+
