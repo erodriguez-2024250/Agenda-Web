@@ -4,23 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="Styles/Login.css">
+    <link rel="stylesheet" href="Styles/login.css">
 </head>
 <body>
     <div class="iniciar">
         <h1>Iniciar Sesión</h1>
-        <form>
+        <form class="login" id="loginForm">
             <div class="mail">
-                <label>Correo Electrónico</label>
+                <label>Correo electrónico</label>
                 <input type="email" id="correo" placeholder="Ej. rcux@gmail.com" required>
             </div>
             <div class="mail">
                 <label>Contraseña</label>
-                <input type="password" id="contrasena" placeholder="••••••••••••">
+                <input type="password" id="contrasena" placeholder="••••••••••" required>
             </div>
             <ul><a href="">¿Olvidaste tu contraseña?</a></ul>
-            <button>Entrar</button>
+            <button type="submit">Entrar</button>
         </form>
     </div>
+    
+    <script src="JS/login.js"></script>
+
 </body>
 </html>
