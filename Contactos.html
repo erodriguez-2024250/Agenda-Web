@@ -10,9 +10,9 @@
 <body>
     <nav class="navbar">
             <a href="contactos.html"><i class="fa-solid fa-house"></i>Inicio</a>
-            <a href=""><i class="fa-solid fa-list-check"></i>Pendientes</a>
-            <a href=""><i class="fa-solid fa-user"></i>Perfil</a>
-            <a href=""><i class="fa-regular fa-star"></i></i>Favoritos</a>
+            <a href="ToDoList.html"><i class="fa-solid fa-list-check"></i>Pendientes</a>
+            <a href="#" id="btnPerfil"><i class="fa-solid fa-user"></i>Perfil</a>
+            <a href="Favoritos.html"><i class="fa-regular fa-star"></i></i>Favoritos</a>
     </nav>
     <div class="all-contacts">
         <div class="contacts-A">
@@ -20,19 +20,28 @@
             <div class="contact-item">
                 <i class="fa-regular fa-address-card"></i>
                 <h2>Andrés Iniesta</h2>
-                <button><i class="fa-solid fa-clipboard"></i></button> 
+                <button class="btn-details" data-group="A" data-name="Andrés Iniesta"
+                    data-phone="+502 45125156" data-email="ainiesta@gmail.com">
+                    <i class="fa-solid fa-clipboard"></i>
+                </button>
                 <b>+502 45125156</b>
             </div>
             <div class="contact-item">
                 <i class="fa-regular fa-address-card"></i>
                 <h2>Alexis Sanchez</h2>
-                <button><i class="fa-solid fa-clipboard"></i></button> 
+                <button class="btn-details" data-group="A" data-name="Alexis Sanchez"
+                    data-phone="+502 54972584" data-email="asanchez@gmail.com">
+                    <i class="fa-solid fa-clipboard"></i>
+                </button>
                 <b>+502 54972584</b>
             </div>
             <div class="contact-item">
                 <i class="fa-regular fa-address-card"></i>
                 <h2>Alan Shearer</h2>
-                <button><i class="fa-solid fa-clipboard"></i></button> 
+                <button class="btn-details" data-group="A" data-name="Alan Shearer"
+                    data-phone="+502 29845618" data-email="ashearer@gmail.com">
+                    <i class="fa-solid fa-clipboard"></i>
+                </button>
                 <b>+502 29845618</b>
             </div>
         </div>
@@ -41,19 +50,28 @@
             <div class="contact-item">
                 <i class="fa-regular fa-address-card"></i>
                 <h2>Bastian S.</h2>
-                <button><i class="fa-solid fa-clipboard"></i></button>  
+                <button class="btn-details" data-group="B" data-name="Bastian. S"
+                    data-phone="+502 36975412" data-email="bswens@gmail.com">
+                    <i class="fa-solid fa-clipboard"></i>
+                </button>  
                 <b>+502 36975412</b>
             </div>
             <div class="contact-item">
                 <i class="fa-regular fa-address-card"></i>
                 <h2>Buchanan</h2>
-                <button><i class="fa-solid fa-clipboard"></i></button> 
+                <button class="btn-details" data-group="B" data-name="Buchanan"
+                    data-phone="+502 36975412" data-email="buchanan@gmail.com">
+                    <i class="fa-solid fa-clipboard"></i>
+                </button> 
                 <b>+502 36975412</b>
             </div>
             <div class="contact-item">
                 <i class="fa-regular fa-address-card"></i>
                 <h2>Bale Gareth</h2>
-                <button><i class="fa-solid fa-clipboard"></i></button>
+                <button class="btn-details" data-group="B" data-name="Bale Gareth"
+                    data-phone="+502 36975412" data-email="bgareth@gmail.com">
+                    <i class="fa-solid fa-clipboard"></i>
+                </button>
                 <b>+502 36975412</b>
             </div>
         </div>
@@ -62,19 +80,28 @@
             <div class="contact-item">
                 <i class="fa-regular fa-address-card"></i>
                 <h2>Claudio Pizarro</h2>
-                <button><i class="fa-solid fa-clipboard"></i></button>
+                <button class="btn-details" data-group="C" data-name="Claudio Pizarro"
+                    data-phone="+502 31579462" data-email="cpizarro@gmail.com">
+                    <i class="fa-solid fa-clipboard"></i>
+                </button>
                 <b>+502 31579462</b>
             </div>
             <div class="contact-item">
                 <i class="fa-regular fa-address-card"></i>
                 <h2>Cucho Hernandez</h2>
-                <button><i class="fa-solid fa-clipboard"></i></button>
+                <button class="btn-details" data-group="C" data-name="Cucho Hernandez"
+                    data-phone="+502 31579462" data-email="chernandez@gmail.com">
+                    <i class="fa-solid fa-clipboard"></i>
+                </button>
                 <b>+502 31579462</b>
             </div>
             <div class="contact-item">
                 <i class="fa-regular fa-address-card"></i>
                 <h2>Charlton</h2>
-                <button><i class="fa-solid fa-clipboard"></i></button> 
+                <button class="btn-details" data-group="C" data-name="Charlton"
+                    data-phone="+502 31579462" data-email="charlton@gmail.com">
+                    <i class="fa-solid fa-clipboard"></i>
+                </button> 
                 <b>+502 31579462</b>
             </div>
         </div>
@@ -83,19 +110,28 @@
             <div class="contact-item">
                 <i class="fa-regular fa-address-card"></i>
                 <h2>Elias Figueroa</h2>
-                <button><i class="fa-solid fa-clipboard"></i></button> 
+                <button class="btn-details" data-group="E" data-name="Elias Figueroa"
+                    data-phone="+502 36975412" data-email="efigueroa@gmail.com">
+                    <i class="fa-solid fa-clipboard"></i>
+                </button> 
                 <b>+502 36975412</b>
             </div>
             <div class="contact-item">
                 <i class="fa-regular fa-address-card"></i>
                 <h2>Eberechi Eze</h2>
-                <button><i class="fa-solid fa-clipboard"></i></button> 
+                <button class="btn-details" data-group="E" data-name="Eberechi Eze"
+                    data-phone="+502 36975412" data-email="eeze@gmail.com">
+                    <i class="fa-solid fa-clipboard"></i>
+                </button> 
                 <b>+502 36975412</b>
             </div>
             <div class="contact-item">
                 <i class="fa-regular fa-address-card"></i>
                 <h2>Eden Hazard</h2>
-                <button><i class="fa-solid fa-clipboard"></i></button> 
+                <button class="btn-details" data-group="E" data-name="Eden Hazard"
+                    data-phone="+502 36975412" data-email="ehazard@gmail.com">
+                    <i class="fa-solid fa-clipboard"></i>
+                </button> 
                 <b>+502 36975412</b>
             </div>
         </div>
@@ -104,19 +140,28 @@
             <div class="contact-item">
                 <i class="fa-regular fa-address-card"></i>
                 <h2>Jairzinho</h2>
-                <button><i class="fa-solid fa-clipboard"></i></button> 
+                <button class="btn-details" data-group="J" data-name="Jairzinho"
+                    data-phone="+502 21548674" data-email="jairzinho@gmail.com">
+                    <i class="fa-solid fa-clipboard"></i>
+                </button> 
                 <b>+502 21548674</b>
             </div>
             <div class="contact-item">
                 <i class="fa-regular fa-address-card"></i>
                 <h2>Jota Jordi Alba</h2>
-                <button><i class="fa-solid fa-clipboard"></i></button> 
+                <button class="btn-details" data-group="J" data-name="Jota Jordi Alba"
+                    data-phone="+502 39874215" data-email="jalba@gmail.com">
+                    <i class="fa-solid fa-clipboard"></i>
+                </button> 
                 <b>+502 39874215</b>
             </div>
             <div class="contact-item">
                 <i class="fa-regular fa-address-card"></i>
                 <h2>Joan García</h2>
-                <button><i class="fa-solid fa-clipboard"></i></button> 
+                <button class="btn-details" data-group="J" data-name="Joan García"
+                    data-phone="+502 39874215" data-email="jgarcia@gmail.com">
+                    <i class="fa-solid fa-clipboard"></i>
+                </button> 
                 <b>+502 39874215</b>
             </div>
         </div>
@@ -125,19 +170,28 @@
             <div class="contact-item">
                 <i class="fa-regular fa-address-card"></i>
                 <h2>Neymar Junior</h2>
-                <button><i class="fa-solid fa-clipboard"></i></button> 
+                <button class="btn-details" data-group="N" data-name="Neymar Junior"
+                    data-phone="+502 21548674" data-email="njunior@gmail.com">
+                    <i class="fa-solid fa-clipboard"></i>
+                </button> 
                 <b>+502 21548674</b>
             </div>
             <div class="contact-item">
                 <i class="fa-regular fa-address-card"></i>
-                <h2>Nicolas JACKson</h2>
-                <button><i class="fa-solid fa-clipboard"></i></button> 
+                <h2>Nicolas Jackson</h2>
+                <button class="btn-details" data-group="N" data-name="Nicolas Jackson"
+                    data-phone="+502 39874215" data-email="njackson@gmail.com">
+                    <i class="fa-solid fa-clipboard"></i>
+                </button> 
                 <b>+502 39874215</b>
             </div>
             <div class="contact-item">
                 <i class="fa-regular fa-address-card"></i>
                 <h2>Nuno Mendez</h2>
-                <button><i class="fa-solid fa-clipboard"></i></button> 
+                <button class="btn-details" data-group="N" data-name="Nuno mendez"
+                    data-phone="+502 12459756" data-email="nmendez@gmail.com">
+                    <i class="fa-solid fa-clipboard"></i>
+                </button> 
                 <b>+502 12459756</b>
             </div>
         </div>
@@ -146,19 +200,28 @@
             <div class="contact-item">
                 <i class="fa-regular fa-address-card"></i>
                 <h2>Savinho</h2>
-                <button><i class="fa-solid fa-clipboard"></i></button> 
+                <button class="btn-details" data-group="S" data-name="Savinho"
+                    data-phone="+502 84561548" data-email="savinho@gmail.com">
+                    <i class="fa-solid fa-clipboard"></i>
+                </button> 
                 <b>+502 84561548</b>
             </div>
             <div class="contact-item">
                 <i class="fa-regular fa-address-card"></i>
                 <h2>Saliba William</h2>
-                <button><i class="fa-solid fa-clipboard"></i></button> 
+                <button class="btn-details" data-group="S" data-name="Saliba William"
+                    data-phone="+502 54025184" data-email="swilliam@gmail.com">
+                    <i class="fa-solid fa-clipboard"></i>
+                </button> 
                 <b>+502 54025184</b>
             </div>
             <div class="contact-item">
                 <i class="fa-regular fa-address-card"></i>
                 <h2>Sneijder</h2>
-                <button><i class="fa-solid fa-clipboard"></i></button> 
+                <button class="btn-details" data-group="S" data-name="Sneijder"
+                    data-phone="+502 52367421" data-email="sneijder@gmail.com">
+                    <i class="fa-solid fa-clipboard"></i>
+                </button> 
                 <b>+502 52367421</b>
             </div>
         </div>
@@ -167,19 +230,28 @@
             <div class="contact-item">
                 <i class="fa-regular fa-address-card"></i>
                 <h2>Titi Henry</h2>
-                <button><i class="fa-solid fa-clipboard"></i></button> 
+                <button class="btn-details" data-group="T" data-name="Titi Henry"
+                    data-phone="+502 24598745" data-email="thenry@gmail.com">
+                    <i class="fa-solid fa-clipboard"></i>
+                </button> 
                 <b>+502 24598745</b>
             </div>
             <div class="contact-item">
                 <i class="fa-regular fa-address-card"></i>
                 <h2>Tito Lewandowski</h2>
-                <button><i class="fa-solid fa-clipboard"></i></button> 
+                <button class="btn-details" data-group="T" data-name="Tito Lewandowski"
+                    data-phone="+502 84561548" data-email="tlewandowski@gmail.com">
+                    <i class="fa-solid fa-clipboard"></i>
+                </button> 
                 <b>+502 84561548</b>
             </div>
             <div class="contact-item">
                 <i class="fa-regular fa-address-card"></i>
                 <h2>Tyron Mings</h2>
-                <button><i class="fa-solid fa-clipboard"></i></button> 
+                <button class="btn-details" data-group="T" data-name="Tyron Mings"
+                    data-phone="+502 84561548" data-email="tmings@gmail.com">
+                    <i class="fa-solid fa-clipboard"></i>
+                </button> 
                 <b>+502 84561548</b>
             </div>
         </div>
@@ -188,28 +260,56 @@
             <div class="contact-item">
                 <i class="fa-regular fa-address-card"></i>
                 <h2>Van Persie</h2>
-                <button><i class="fa-solid fa-clipboard"></i></button> 
+                <button class="btn-details" data-group="V" data-name="Van Persie"
+                    data-phone="+502 84561548" data-email="vpersie@gmail.com">
+                    <i class="fa-solid fa-clipboard"></i>
+                </button> 
                 <b>+502 84561548</b>
             </div>
             <div class="contact-item">
                 <i class="fa-regular fa-address-card"></i>
                 <h2>Van Basten</h2>
-                <button><i class="fa-solid fa-clipboard"></i></button> 
+                <button class="btn-details" data-group="V" data-name="Van Basten"
+                    data-phone="+502 84561548" data-email="vbasten@gmail.com">
+                    <i class="fa-solid fa-clipboard"></i>
+                </button> 
                 <b>+502 84561548</b>
             </div>
             <div class="contact-item">
                 <i class="fa-regular fa-address-card"></i>
                 <h2>Van Nistelrooy</h2>
-                <button><i class="fa-solid fa-clipboard"></i></button> 
+                <button class="btn-details" data-group="V" data-name="Van Nistelrooy"
+                    data-phone="+502 84561548" data-email="vnistelrooy@gmail.com">
+                    <i class="fa-solid fa-clipboard"></i>
+                </button> 
                 <b>+502 84561548</b>
             </div>
         </div>
     </div>
 
-    <button class="btn-agregar" href="Login.html">
-        <a href="Login.html"><i class="fa-solid fa-user-plus"></i></a>
+    <button class="btn-agregar" href="newContact.html">
+        <a href="newContact.html"><i class="fa-solid fa-user-plus"></i></a>
     </button>
     
+    <div class="contact-details" id="contactDetails">
+        <div class="details-card">
+            <span class="close" id="closeDetails">&times;</span>
+            <h1 id="detailName"></h1>
+            <p><strong>Grupo:</strong> <span id="detailGroup"></span></p>
+            <p><strong>Teléfono:</strong> <span id="detailPhone"></span></p>
+            <p><strong>Email:</strong> <span id="detailEmail"></span></p>
+        </div>
+    </div>
+
+    <div class="contact-details" id="perfilModal">
+        <div class="details-card">
+            <span class="close" id="closePerfil">&times;</span>
+            <h2>Mi Perfil</h2>
+            <p><strong>Correo:</strong> <span id="perfilCorreo"></span></p>
+        </div>
+    </div>
+    
+    <script src="JS/detalles.js"></script>
     
 </body>
 </html>
