@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background-color: #fdff9c4f;
+}
+
+.navbar{
+    background-color: gold;
+    display: flex;
+    font-size: 30px;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: sticky;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.all-contacts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.contact-item{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 20px 0;
+    margin-bottom: 15px;
+    border-radius: 16px;
+    color: #1a2f50;
+    justify-content: center;
+}
+
+.fa-solid{
+    font-size: 20px;
+}
+
+button{
+    margin-left: 2%;
+}
+
+h1{
+    font-size: 25px;
+    color: #1a2f50;
+    border-bottom: 2px solid #1a2f50;
+    margin: 18px 0 15px 0;
+    text-align: center;
+}
+
+b{
+    font-size: 20px;
+    color: transparent;
+}
+
+b:hover{
+    color: #3b3b3b;
+    transition: 0.9s ease;
+}
+
+label{
+    font-size: 30px;
+    justify-content: center;
+}
+
+.contact-item .fa-solid{
+    font-size: 22px;
+    margin-right: 6px;
+}
+
+.btn-details{
+    margin-left: 10px;
+    background-color: none;
+    border: none;
+    transition: transform 0.3s;
+}
+
+.btn-details:hover{
+    transform: scale(1.2);
+}
+
+.btn-agregar{
+    position: fixed;
+    bottom: 40px;
+    right: 50px;
+    padding: 20px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    color: #000;
+    background-color: gold;
+}
+
+.btn-agregar i{
+    font-size: 45px;
+}
+
+.btn-agregar:hover{
+    background-color: yellow;
+    transition: 0.5s ease;
+}
+
+.contact-details {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.details-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 30px;
+    width: 350px;
+    text-align: center;
+    color: #1a2f50;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.contact-details p{
+    font-size: 22px;
+}
